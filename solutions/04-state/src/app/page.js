@@ -1,13 +1,14 @@
+"use client";
+
 import { useState } from 'react';
-import './App.css';
 import Header from './components/Header';
 import Post from './components/Post';
 import SelectedItem from './components/SelectedItem';
-import Barry from './otters/otter1.jpg';
-import Robin from './otters/otter2.jpg';
-import Maurice from './otters/otter3.jpg';
-import Lesley from './otters/otter4.jpg';
-import Barbara from './otters/otter5.jpg';
+import Barry from '../assets/otters/otter1.jpg';
+import Robin from '../assets/otters/otter2.jpg';
+import Maurice from '../assets/otters/otter3.jpg';
+import Lesley from '../assets/otters/otter4.jpg';
+import Barbara from '../assets/otters/otter5.jpg';
 
 const ottersArray = [
   { image: Barry, name: 'Barry', id: 1 },
@@ -17,7 +18,7 @@ const ottersArray = [
   { image: Barbara, name: 'Barbara', id: 5 },
 ];
 
-function App() {
+function Home() {
   const [selectedPostName, setSelectedPostName] = useState('Barry');
   const selectedPost = ottersArray.find(otter => otter.name === selectedPostName);
 
@@ -44,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

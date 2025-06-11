@@ -1,8 +1,12 @@
+"use client";
+
+import Image from "next/image";
+
 function SelectedItem({ image, name }) {
     return (
         <div className='selected-item'>
             <p>{name}</p>
-            <img src={image} alt={name} />
+            <Image src={image} alt={name} />
         </div>
     )
 }
