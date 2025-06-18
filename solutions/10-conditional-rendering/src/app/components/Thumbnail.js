@@ -1,14 +1,12 @@
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import './Thumbnail.css';
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import "./Thumbnail.css";
 
 function Thumbnail({ itemId, image, title }) {
   return (
-    <Link
-      className="thumbnail-component"
-      to={`/details/${itemId}`}
-    >
+    <Link className="thumbnail-component" to={`/details/${itemId}`}>
       <div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image} alt={title} />
       </div>
       <p>{title}</p>

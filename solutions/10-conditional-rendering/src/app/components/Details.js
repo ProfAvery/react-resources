@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
-import { Outlet } from 'react-router-dom';
-import { itemImages } from '../items';
-import ItemType from '../types/item';
-import Thumbnail from './Thumbnail';
-import './Details.css';
+import PropTypes from "prop-types";
+import { Outlet } from "react-router-dom";
+import { itemImages } from "../../assets/items";
+import ItemType from "../../types/item";
+import Thumbnail from "./Thumbnail";
+import "./Details.css";
 
 function Details({ items }) {
   return (
