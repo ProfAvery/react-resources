@@ -19,9 +19,11 @@
       "no-console": "off"
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
+  "//": {
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run lint"
+      }
     }
   },
   "dependencies": {
