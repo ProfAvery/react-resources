@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import Thumbnail from './Thumbnail';
-import { itemImages } from '../items';
-import './Home.css';
-import ItemType from '../types/item';
+import PropTypes from "prop-types";
+import { itemImages } from "../../assets/items";
+import Thumbnail from "./Thumbnail";
+import "./Home.css";
+import ItemType from "../../types/item";
 
 function Home({ items }) {
   return (
