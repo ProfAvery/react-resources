@@ -1,5 +1,3 @@
-"use client";
-
 function Header() {
     return (
         <header className='header-component'>
