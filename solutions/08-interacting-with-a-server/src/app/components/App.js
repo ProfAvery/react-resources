@@ -1,19 +1,21 @@
-"use client";
-
 import axios from "axios";
-import { useEffect, useState } from "react";
 import Header from "./Header";
 import Home from "./Home";
 
-function App() {
-  const [items, setItems] = useState([]);
+async function App() {
+  // Server-side rendering with Axios
+  const result = await axios.get("http://localhost:3030/api/items");
+  const items = result.data;
 
-  useEffect(() => {
-    axios
-      .get("/api/items")
-      .then((result) => setItems(result.data))
-      .catch(console.error);
-  }, []);
+  // Server-side rendering with Next.js fetch
+  // const data = await fetch("http://localhost:3030/api/items", {
+  //   cache: "no-store",
+  // });
+  // const items = await data.json();
+
+  // Static site generation
+  // const data = await fetch("http://localhost:3030/api/items");
+  // const items = await data.json();
 
   return (
     <div>
